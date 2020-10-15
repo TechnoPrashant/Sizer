@@ -98,4 +98,4 @@ appBar() {
   }
 ```
 
-**NOTE:** Acceptable height and width 0 to 100.
+**NOTE:** Acceptable value 0 to 100.
