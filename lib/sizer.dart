@@ -1,22 +1,4 @@
 library sizer;
 
-import 'package:sizer/sizer_util.dart';
-
-extension Sizer on double {
-  double h() {
-    if (this <= 100) {
-      return SizerUtil.height * this / 100;
-    }
-  }
-  double w() {
-    if (this <= 100) {
-      return SizerUtil.width * this / 100;
-    }
-  }
-
-  double sp() {
-    if (this <= 100) {
-      return SizerUtil.width * this / 1000;
-    }
-  }
-}
+export 'package:sizer/sizer_ext.dart';
+export 'sizer_util.dart';
