@@ -2,7 +2,7 @@ library sizer;
 
 import 'package:sizer/sizer_util.dart';
 
-extension CalciExtension on double {
+extension Sizer on double {
   double h() {
     if (this <= 100) {
       return SizerUtil.height * this / 100;
