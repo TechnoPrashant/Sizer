@@ -57,7 +57,7 @@ class MyApp extends StatelessWidget {
 
 You can use it like this: 
 
-Whenever you use height and width first implement sizer package.
+Whenever you use height and width first import sizer package.
 ```
 import 'package:sizer/sizer.dart';
 ```
