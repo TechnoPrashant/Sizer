@@ -8,7 +8,6 @@ extension CalciExtension on double {
       return SizerUtil.height * this / 100;
     }
   }
-
   double w() {
     if (this <= 100) {
       return SizerUtil.width * this / 100;
