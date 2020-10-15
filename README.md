@@ -55,15 +55,15 @@ You can use it like this:
 Widget Size
 ```
     Container(
-      width: 20.w,
-      height:30.h
+      width: 20.0.w,    //It will take a 20% of screen width
+      height:30.0.h     //It will take a 20% of screen height
     )
 ```
 
 Padding
 ```
-     Padding(
-      padding: EdgeInsets.all(10.0.h),
+    Padding(
+      padding: EdgeInsets.symmetric(vertical: 5.0.h, horizontal: 3.0.h),
       child: Container(),
     );
 ```
@@ -71,15 +71,15 @@ Padding
 Text size
 ```
     Text(
-      'Sizer',style: TextStyle(fontSize: 15.0.sp),
+      'Sizer',style: TextStyle(fontSize: 15.0.sp),  //It will take a 20% of screen width
     );
 ```
 
 If you want to make square size widget then give height or width in both height and width.
 ```
     Container(
-            width: 30.0.h,
-            height: 30.0.h,
+            width: 30.0.h,      //It will take a 20% of screen height
+            height: 30.0.h,     //It will take a 20% of screen height
     );
 ```
 
