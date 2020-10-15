@@ -10,7 +10,7 @@ dependencies:
   sizer: ^0.1.1
 ```
 
-##How to use.
+#How to use.
 
 Add the following imports to your Dart code: 
 ```
