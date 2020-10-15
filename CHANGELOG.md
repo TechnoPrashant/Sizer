@@ -12,4 +12,4 @@
 
 ## [0.1.0] - 15.10.2020.
 
-* Published Initial Version.
+* Published initial version.
