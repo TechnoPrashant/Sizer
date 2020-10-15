@@ -1,20 +1,9 @@
 import 'package:sizer/sizer_util.dart';
 
 extension SizerExt on double {
-  double h() {
-    if (this <= 100) {
-      return SizerUtil.height * this / 100;
-    }
-  }
-  double w() {
-    if (this <= 100) {
-      return SizerUtil.width * this / 100;
-    }
-  }
+  double get h => SizerUtil.height(this);
 
-  double sp() {
-    if (this <= 100) {
-      return SizerUtil.width * this / 1000;
-    }
-  }
+  double get w => SizerUtil.width(this);
+
+  double get sp => SizerUtil.sp(this);
 }
