@@ -17,7 +17,10 @@ Add the following imports to your Dart code:
 import 'package:sizer/sizer.dart';
 ```
 
+
 Initialize SizerUtil class in MyApp() under OrientationBuilder(Compulsory return LayoutBuilder and OrientationBuilder).
+
+
 ```
 import 'package:flutter/material.dart';
 import 'login_screen.dart';
@@ -51,6 +54,11 @@ class MyApp extends StatelessWidget {
 ```
 
 You can use it like this: 
+
+Whenever you use height and width first implement sizer package.
+```
+import 'package:sizer/sizer.dart';
+```
 
 Widget Size
 ```
