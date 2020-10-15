@@ -1,3 +1,7 @@
-## [0.0.1] - TODO: Add release date.
+## [0.0.1] - 15.10.2020.
 
 * First Release
+
+## [0.0.2] - 15.10.2020.
+
+* Change class name
