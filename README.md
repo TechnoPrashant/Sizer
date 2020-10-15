@@ -18,7 +18,9 @@ import 'package:sizer/sizer.dart';
 ```
 
 
-Initialize SizerUtil class in MyApp() under OrientationBuilder(Compulsory return LayoutBuilder and OrientationBuilder).
+* First need to Initialize SizerUtil.init() method inside main.dart.
+* In main.dart must have to use LayoutBuilder and OrientationBuilder. 
+* See below explain for more details.
 
 
 ```
