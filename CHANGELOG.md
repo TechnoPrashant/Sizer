@@ -1,1 +1,3 @@
-first version
+## [0.0.1] - TODO: Add release date.
+
+* First Release
