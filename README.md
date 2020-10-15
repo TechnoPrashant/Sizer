@@ -11,7 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
   # add sizer
-  sizer: ^0.0.4
+  sizer: ^0.1.0
 ```
 
 #Add the following imports to your Dart code:
