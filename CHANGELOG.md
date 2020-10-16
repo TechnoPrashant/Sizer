@@ -13,3 +13,8 @@
 ## [0.1.0] - 15.10.2020.
 
 * Published initial version.
+
+## [0.1.0] - 15.10.2020.
+
+* Change Readme file
+* Solve some bugs
