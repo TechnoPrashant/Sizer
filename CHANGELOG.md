@@ -14,7 +14,16 @@
 
 * Published initial version.
 
-## [0.1.0] - 15.10.2020.
+## [0.1.1] - 15.10.2020.
 
 * Change Readme file
 * Solve some bugs
+
+## [0.1.2] - 16.10.2020.
+
+* Add comments in code
+
+## [0.1.3] - 19.10.2020.
+
+* Change font size method 
+* Change readme file

@@ -7,7 +7,7 @@ Add to pubspec.yaml.
 ```
 dependencies:
   ...
-  sizer: ^0.1.1
+  sizer: ^0.1.3
 ```
 
 **How to use.**
@@ -35,12 +35,12 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return LayoutBuilder(
+    return LayoutBuilder(                           //return LayoutBuilder
       builder: (context, constraints) {
-        return OrientationBuilder(
+        return OrientationBuilder(                  //return OrientationBuilder
           builder: (context, orientation) {
             //initialize SizerUtil()
-            SizerUtil().init(constraints, orientation);  
+            SizerUtil().init(constraints, orientation);  //initialize SizerUtil
             return MaterialApp(
               debugShowCheckedModeBanner: false,
               title: 'Sizer',
@@ -78,10 +78,10 @@ Padding
     );
 ```
 
-Text size
+Font size
 ```
     Text(
-      'Sizer',style: TextStyle(fontSize: 15.0.sp),  //It will take a 20% of screen width
+      'Sizer',style: TextStyle(fontSize: 15.0.sp),
     );
 ```
 
@@ -107,5 +107,3 @@ appBar() {
           ); //for landscape screen
   }
 ```
-
-**NOTE:** Acceptable value 0 to 100.

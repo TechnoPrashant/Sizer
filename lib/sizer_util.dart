@@ -33,8 +33,11 @@ class SizerUtil {
   //If you want to set textSize 50% of screen width then follow this method
   // screenWidth * yourInput /1000;
   static sp(var i) {
-    return _width * i / 1000;
+    return _width / 100 * (i / 3);
   }
+  /*static sp(var i) {
+    return _width * i / 1000;
+  }*/
 
   get orientation => _orientation;
 }
