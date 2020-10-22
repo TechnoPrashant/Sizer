@@ -7,7 +7,7 @@ Add to pubspec.yaml.
 ```
 dependencies:
   ...
-  sizer: ^0.1.3
+  sizer: ^1.1.0
 ```
 
 **How to use.**
@@ -105,5 +105,25 @@ appBar() {
             width: 100.0.w,
             height: 12.0.h,
           ); //for landscape screen
+  }
+```
+
+If you want the same layout to look different in tablet and mobile then use SizerUtil.getDeviceType method
+```
+SizerUtil.getDeviceType
+```
+
+You can use it like this:
+```
+ appBar() {
+    return SizerUtil.getDeviceType == DeviceScreenType.Tablet
+        ? Container(
+            width: 100.0.w,
+            height: 20.0.h,
+          )                     //for Tablet
+        : Container(
+            width: 100.0.w,
+            height: 12.0.h,
+          );                    //for Mobile
   }
 ```

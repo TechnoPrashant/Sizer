@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 
+import 'enum/DeviceType.dart';
+
 class SizerUtil {
   static double _width;
   static double _height;
   static Orientation _orientation;
+  static DeviceType _deviceType;
 
   void init(BoxConstraints constraints, Orientation orientation) {
     //use constraints object for maxWidth and maxHeight of device screen
@@ -15,6 +18,13 @@ class SizerUtil {
     } else {
       _width = constraints.maxHeight;
       _height = constraints.maxWidth;
+    }
+
+    //for mobile and tablet screen
+    if (_width < 600) {
+      _deviceType= DeviceType.Mobile;
+    }else{
+      _deviceType= DeviceType.Tablet;
     }
   }
 
@@ -35,9 +45,8 @@ class SizerUtil {
   static sp(var i) {
     return _width / 100 * (i / 3);
   }
-  /*static sp(var i) {
-    return _width * i / 1000;
-  }*/
 
-  get orientation => _orientation;
+  static get orientation => _orientation;
+
+  static get getDeviceType =>_deviceType;
 }

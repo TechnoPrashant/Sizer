@@ -1,6 +1,6 @@
 name: sizer
 description: A flutter plugin for Easily make Flutter apps responsive. Automatically adapt UI to different screen sizes. Responsiveness made simple.
-version: 0.1.3
+version: 1.1.0
 #author: Urmish Patel <urmishpatel9@gmail.com>
 homepage: https://github.com/TechnoUrmish/Sizer
 

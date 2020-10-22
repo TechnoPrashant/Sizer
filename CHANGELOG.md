@@ -27,3 +27,7 @@
 
 * Change font size method 
 * Change readme file
+
+## [1.1.0] - 22.10.2020.
+
+* Add Orientation and DeviceType method
