@@ -100,11 +100,11 @@ appBar() {
         ? Container(
             width: 100.0.w,
             height: 20.0.h,
-          ) //for portrait screen
+          )                     //for portrait screen
         : Container(
             width: 100.0.w,
             height: 12.0.h,
-          ); //for landscape screen
+          );                    //for landscape screen
   }
 ```
 
