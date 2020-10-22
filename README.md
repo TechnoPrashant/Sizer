@@ -108,7 +108,7 @@ appBar() {
   }
 ```
 
-If you want the same layout to look different in tablet and mobile then use SizerUtil.getDeviceType method
+If you want the same layout to look different in tablet and mobile then use **SizerUtil.getDeviceType** method
 ```
 SizerUtil.getDeviceType
 ```
