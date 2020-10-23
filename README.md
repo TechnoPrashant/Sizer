@@ -70,7 +70,7 @@ import 'package:sizer/sizer.dart';
     )
 ```
 
-Padding
+**Padding**
 ```
     Padding(
       padding: EdgeInsets.symmetric(vertical: 5.0.h, horizontal: 3.0.h),
@@ -78,13 +78,14 @@ Padding
     );
 ```
 
-Font size
+**Font size**
 ```
     Text(
       'Sizer',style: TextStyle(fontSize: 15.0.sp),
     );
 ```
 
+**Square Widget**
 If you want to make square size widget then give height or width in both height and width.
 ```
     Container(
@@ -93,6 +94,7 @@ If you want to make square size widget then give height or width in both height 
     );
 ```
 
+**Orientation**
 If you want to give support for landscape
 ```
 appBar() {
@@ -108,6 +110,7 @@ appBar() {
   }
 ```
 
+**DeviceType**
 If you want the same layout to look different in tablet and mobile then use **SizerUtil.getDeviceType** method
 ```
 SizerUtil.getDeviceType
