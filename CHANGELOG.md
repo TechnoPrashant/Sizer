@@ -35,3 +35,7 @@
 ## [1.1.1] - 22.10.2020.
 
 * Add Orientation and DeviceType method
+
+## [1.1.2] - 23.10.2020.
+
+* Solve some bugs
