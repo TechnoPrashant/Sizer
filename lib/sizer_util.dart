@@ -20,9 +20,9 @@ class SizerUtil {
 
     //for mobile and tablet screen
     if (_width < 600) {
-      _deviceType= DeviceType.Mobile;
-    }else{
-      _deviceType= DeviceType.Tablet;
+      _deviceType = DeviceType.Mobile;
+    } else {
+      _deviceType = DeviceType.Tablet;
     }
   }
 
@@ -46,7 +46,7 @@ class SizerUtil {
 
   static get orientation => _orientation;
 
-  static get deviceType =>_deviceType;
+  static get deviceType => _deviceType;
 }
 
 enum DeviceType {
