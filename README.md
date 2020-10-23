@@ -2,7 +2,7 @@
 
 A flutter plugin for Easily make Flutter apps responsive. Automatically adapt UI to different screen sizes. Responsiveness made simple.
 
-## Installation：
+## Installation ⬇️
 Add to pubspec.yaml.
 ```
 dependencies:
@@ -10,7 +10,7 @@ dependencies:
   sizer: ^1.1.4
 ```
 
-## How to use
+## How to use 💻
 
 Add the following imports to your Dart code: 
 ```
@@ -62,7 +62,7 @@ Whenever you use height and width first import sizer package.
 import 'package:sizer/sizer.dart';
 ```
 
-**Widget Size**
+**Widget Size** 🕓
 ```
     Container(
       width: 20.0.w,    //It will take a 20% of screen width
@@ -70,7 +70,7 @@ import 'package:sizer/sizer.dart';
     )
 ```
 
-**Padding**
+**Padding** ⏹
 ```
     Padding(
       padding: EdgeInsets.symmetric(vertical: 5.0.h, horizontal: 3.0.h),
@@ -78,14 +78,14 @@ import 'package:sizer/sizer.dart';
     );
 ```
 
-**Font size**
+**Font size** 🆎
 ```
     Text(
       'Sizer',style: TextStyle(fontSize: 15.0.sp),
     );
 ```
 
-**Square Widget**
+**Square Widget** 🟩
 
 If you want to make square size widget then give height or width in both height and width.
 ```
@@ -95,7 +95,7 @@ If you want to make square size widget then give height or width in both height 
     );
 ```
 
-**Orientation**
+**Orientation** 🔄
 
 If you want to give support for landscape
 ```
@@ -112,7 +112,7 @@ appBar() {
   }
 ```
 
-**DeviceType**
+**DeviceType** 📱
 
 If you want the same layout to look different in tablet and mobile then use **SizerUtil.getDeviceType** method
 ```
