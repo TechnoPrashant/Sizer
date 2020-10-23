@@ -25,7 +25,7 @@ import 'package:sizer/sizer.dart';
 
 ```
 import 'package:flutter/material.dart';
-import 'login_screen.dart';
+import 'login_screen.dart'; 
 import 'package:sizer/sizer.dart';
 
 void main() {
