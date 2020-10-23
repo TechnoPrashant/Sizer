@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'enum/device_type.dart';
+import 'enum/device_type.enum';
 
 class SizerUtil {
   static double _width;

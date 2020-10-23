@@ -7,7 +7,7 @@ Add to pubspec.yaml.
 ```
 dependencies:
   ...
-  sizer: ^1.1.2
+  sizer: ^1.1.3
 ```
 
 **How to use.**
