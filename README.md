@@ -122,7 +122,7 @@ appBar() {
 
 **DeviceType** 📱
 
-If you want the same layout to look different in tablet and mobile then use **SizerUtil.getDeviceType** method
+If you want the same layout to look different in tablet and mobile then use ``SizerUtil.getDeviceType`` method
 ```
 SizerUtil.getDeviceType
 ```
@@ -142,6 +142,6 @@ You can use it like this:
   }
 ```
 
-## Issues and feedback 💭 
+## Issue and feedback 💭 
 
 If you have any suggestion for including a feature or if something doesn't work, feel free to open a Github [issue](https://github.com/TechnoUrmish/Sizer/issues) for us to have a discussion on it.
