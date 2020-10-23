@@ -7,8 +7,16 @@ Add to pubspec.yaml.
 ```
 dependencies:
   ...
-  sizer: ^1.1.4
+  sizer: ^1.1.5
 ```
+
+## Parameters ⚙️ 
+
+* `.h` - (double) for widget height
+* `.w` - (double) for widget width
+* `.sp` - (double) for font size
+* `SizerUtil.orientation` - for screen orientation portrait or landscape
+* `SizerUtil.deviceType` - for device type mobile or tablet
 
 ## How to use 💻
 
@@ -122,7 +130,7 @@ SizerUtil.getDeviceType
 You can use it like this:
 ```
  appBar() {
-    return SizerUtil.getDeviceType == DeviceScreenType.Tablet
+    return SizerUtil.deviceType == DeviceScreenType.Tablet
         ? Container(
             width: 100.0.w,
             height: 20.0.h,
@@ -133,3 +141,7 @@ You can use it like this:
           );                    //for Mobile
   }
 ```
+
+## Issues and feedback 💭 
+
+If you have any suggestion for including a feature or if something doesn't work, feel free to open a Github [issue](https://github.com/TechnoUrmish/Sizer/issues) for us to have a discussion on it.

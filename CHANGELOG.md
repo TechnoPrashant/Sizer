@@ -44,6 +44,10 @@
 
 * Solve some bugs
 
-## [1.1.3] - 23.10.2020.
+## [1.1.4] - 23.10.2020.
+
+* Change readme file
+
+## [1.1.4] - 23.10.2020.
 
 * Change readme file
