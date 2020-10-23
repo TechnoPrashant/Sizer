@@ -10,7 +10,7 @@ dependencies:
   sizer: ^1.1.3
 ```
 
-**How to use.**
+## How to use
 
 Add the following imports to your Dart code: 
 ```
@@ -62,7 +62,7 @@ Whenever you use height and width first import sizer package.
 import 'package:sizer/sizer.dart';
 ```
 
-Widget Size
+**Widget Size**
 ```
     Container(
       width: 20.0.w,    //It will take a 20% of screen width
