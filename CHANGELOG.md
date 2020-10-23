@@ -43,3 +43,7 @@
 ## [1.1.3] - 23.10.2020.
 
 * Solve some bugs
+
+## [1.1.3] - 23.10.2020.
+
+* Change readme file

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'enum/device_type.enum';
-
 class SizerUtil {
   static double _width;
   static double _height;
@@ -48,5 +46,10 @@ class SizerUtil {
 
   static get orientation => _orientation;
 
-  static get getDeviceType =>_deviceType;
+  static get deviceType =>_deviceType;
+}
+
+enum DeviceType {
+  Mobile,
+  Tablet,
 }

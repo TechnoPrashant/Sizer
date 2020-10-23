@@ -1,4 +1,0 @@
-enum DeviceType {
-  Mobile,
-  Tablet,
-}
