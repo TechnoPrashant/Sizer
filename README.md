@@ -4,6 +4,8 @@ A flutter plugin for Easily make Flutter apps responsive. Automatically adapt
 
 ![Alt Text](https://github.com/TechnoUrmish/Sizer/blob/master/example/images/img_ss_with_lib.png)
 
+![Alt Text](https://github.com/TechnoUrmish/Sizer/blob/master/example/images/img_ss_without_lib.png)
+
 
 ## Installation ⬇️
 Add to pubspec.yaml.
