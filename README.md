@@ -2,6 +2,9 @@
 
 A flutter plugin for Easily make Flutter apps responsive. Automatically adapt UI to different screen sizes. Responsiveness made simple.
 
+![Alt Text](https://github.com/TechnoUrmish/Sizer/blob/master/example/images/img_ss_with_lib.png)
+
+
 ## Installation ⬇️
 Add to pubspec.yaml.
 ```
