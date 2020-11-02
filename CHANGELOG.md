@@ -48,6 +48,10 @@
 
 * Change readme file
 
-## [1.1.4] - 23.10.2020.
+## [1.1.5] - 23.10.2020.
 
 * Change readme file
+
+## [1.1.6] - 27.10.2020.
+
+* Add example
