@@ -12,7 +12,7 @@ Add to pubspec.yaml.
 ```
 dependencies:
   ...
-  sizer: ^1.1.6
+  sizer: ^1.1.7
 ```
 
 ## Parameters ⚙️ 
