@@ -79,7 +79,7 @@ import 'package:sizer/sizer.dart';
 ```
     Container(
       width: 20.0.w,    //It will take a 20% of screen width
-      height:30.0.h     //It will take a 20% of screen height
+      height:30.0.h     //It will take a 30% of screen height
     )
 ```
 
@@ -103,8 +103,8 @@ import 'package:sizer/sizer.dart';
 If you want to make square size widget then give height or width in both height and width.
 ```
     Container(
-            width: 30.0.h,      //It will take a 20% of screen height
-            height: 30.0.h,     //It will take a 20% of screen height
+            width: 30.0.h,      //It will take a 30% of screen height
+            height: 30.0.h,     //It will take a 30% of screen height
     );
 ```
 
