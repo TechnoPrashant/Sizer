@@ -5,21 +5,13 @@ class SizerUtil {
   static double _height;
   static Orientation _orientation;
   static DeviceType _deviceType;
-
   void init(BoxConstraints constraints, Orientation orientation) {
     //use constraints object for maxWidth and maxHeight of device screen
-
     _orientation = orientation;
-    if (orientation == Orientation.portrait) {
-      _width = constraints.maxWidth;
-      _height = constraints.maxHeight;
-    } else {
-      _width = constraints.maxHeight;
-      _height = constraints.maxWidth;
-    }
-
+    _width = constraints.maxWidth;
+    _height = constraints.maxHeight;
     //for mobile and tablet screen
-    if (_width < 600) {
+    if ((_orientation == Orientation.portrait && _width < 600) || (_orientation == Orientation.landscape && _height < 600)) {
       _deviceType = DeviceType.Mobile;
     } else {
       _deviceType = DeviceType.Tablet;
@@ -45,7 +37,6 @@ class SizerUtil {
   }
 
   static get orientation => _orientation;
-
   static get deviceType => _deviceType;
 }
 
