@@ -9,7 +9,7 @@ A flutter plugin for Easily make Flutter apps responsive. Automatically adapt
 
 ## Installation ⬇️
 Add to pubspec.yaml.
-```
+```yaml
 dependencies:
   ...
   sizer: ^1.1.7
@@ -26,17 +26,17 @@ dependencies:
 ## How to use 💻
 
 Add the following imports to your Dart code: 
-```
+```dart
 import 'package:sizer/sizer.dart';
 ```
 
 
-* First need to Initialize SizerUtil.init() method inside main.dart.
+* First need to Initialize SizerUtil.init() method inside main.dart. 
 * In main.dart must have to use LayoutBuilder and OrientationBuilder. 
 * See below explain for more details.
 
 
-```
+```dart
 import 'package:flutter/material.dart';
 import 'login_screen.dart'; 
 import 'package:sizer/sizer.dart';
@@ -67,16 +67,42 @@ class MyApp extends StatelessWidget {
   }
 }
 ```
+### `SizerWidget` 🧩
+Or you can use `SizerWidget` for intilaze `SizerUtil.init()` and implement `LayoultBuilder` and `OrientationBuilder` without custom implementation.
+See below explain for more details:
+```dart
+import 'package:flutter/material.dart';
+import 'login_screen.dart'; 
+import 'package:sizer/sizer.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return SizerWidget(
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Sizer',
+        theme: ThemeData.light(),
+        home: HomeScreen(),
+      ),
+    );
+  }
+}
+```
 
 You can use it like this: 
 
 Whenever you use height and width first import sizer package.
-```
+```dart
 import 'package:sizer/sizer.dart';
 ```
 
 **Widget Size** 🕓
-```
+```dart
     Container(
       width: 20.0.w,    //It will take a 20% of screen width
       height:30.0.h     //It will take a 30% of screen height
@@ -84,7 +110,7 @@ import 'package:sizer/sizer.dart';
 ```
 
 **Padding** ⏹
-```
+```dart
     Padding(
       padding: EdgeInsets.symmetric(vertical: 5.0.h, horizontal: 3.0.h),
       child: Container(),
@@ -92,7 +118,7 @@ import 'package:sizer/sizer.dart';
 ```
 
 **Font size** 🆎
-```
+```dart
     Text(
       'Sizer',style: TextStyle(fontSize: 15.0.sp),
     );
@@ -101,7 +127,7 @@ import 'package:sizer/sizer.dart';
 **Square Widget** 🟩
 
 If you want to make square size widget then give height or width in both height and width.
-```
+```dart
     Container(
             width: 30.0.h,      //It will take a 30% of screen height
             height: 30.0.h,     //It will take a 30% of screen height
@@ -111,7 +137,7 @@ If you want to make square size widget then give height or width in both height 
 **Orientation** 🔄
 
 If you want to give support for landscape
-```
+```dart
 appBar() {
     return SizerUtil.orientation == Orientation.portrait
         ? Container(
@@ -133,7 +159,7 @@ SizerUtil.getDeviceType
 ```
 
 You can use it like this:
-```
+```dart
  appBar() {
     return SizerUtil.deviceType == DeviceScreenType.Tablet
         ? Container(
