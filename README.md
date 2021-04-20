@@ -1,10 +1,10 @@
 # sizer
 
-<p align="start" >
+<p align="center" >
   <strong>Sizer is helps you to create responsive UI easily.</strong>
   <br />
   <br />
-  <a href="https://www.buymeacoffee.com/fluttersizer" target="_blank"><img width="350px" src="https://github.com/TechnoUrmish/Sizer/blob/master/example/images/iv_buy_me_a_coffee.png" style="height: 51px !important;width: 217px !important;" ></a>
+  <a href="https://www.buymeacoffee.com/fluttersizer" target="_blank"><img width="250px" src="https://github.com/TechnoUrmish/Sizer/blob/master/example/images/iv_buy_me_a_coffee.png" style="height: 51px !important;width: 217px !important;" ></a>
 </p>
 
 <br />
