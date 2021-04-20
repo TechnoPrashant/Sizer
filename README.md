@@ -120,7 +120,7 @@ Device.screenType == ScreenType.mobile
 
 If you want to give support for both portrait and landscape then make separate widget for both like orientation example.
 
-**DeviceType**\n
+**DeviceType\n**
 If you want to give support for both mobile and tablet then make separate widget for both like deviceType example.  
 
 # Note
