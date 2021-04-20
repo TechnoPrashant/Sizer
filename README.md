@@ -4,7 +4,7 @@
   <strong>Sizer is helps you to create responsive UI easily.</strong>
   <br />
   <br />
-  <a href="https://www.buymeacoffee.com/fluttersizer" target="_blank"><img width="150px" src="https://www.buymeacoffee.com/assets/img/custom_images/orange_" style="height: 51px !important;width: 217px !important;" ></a>
+  <a href="https://www.buymeacoffee.com/fluttersizer" target="_blank"><img width="150px" src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" style="height: 51px !important;width: 217px !important;" ></a>
 </p>
 
 <br />
