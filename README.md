@@ -1,5 +1,7 @@
 # sizer
 
+![Buy me a coffee widget](https://github.com/md-weber/buy_me_a_coffee/blob/master/assets/readme/BuyMeACoffee.gif)
+
 A flutter plugin for Easily make Flutter apps responsive. Automatically adapt UI to different screen sizes. Responsiveness made simple.
 
 ![Alt Text](https://github.com/TechnoUrmish/Sizer/blob/master/example/images/img_ss_with_lib.png)
