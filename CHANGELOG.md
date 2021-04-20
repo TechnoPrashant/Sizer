@@ -104,3 +104,7 @@
 ## [2.0.8] - 20.04.2021.
 
 * Fix multiplatform bug
+
+## [2.0.9] - 20.04.2021.
+
+* Fix multiplatform bug
