@@ -1,16 +1,13 @@
 # sizer
 
-<p align="center" >
-  <strong>Simplifying your widget tree structure by defining widgets using methods.</strong>
+<p align="start" >
+  <strong>Sizer is helps you to create responsive UI easily.</strong>
   <br />
   <br />
-  <a href="https://pub.dev/packages/styled_widget"><img src="https://img.shields.io/pub/v/styled_widget?color=blue" /></a>&nbsp;&nbsp;
-  <a href="https://www.buymeacoffee.com/tOTWBs7" target="_blank"><img width="150px" src="https://cdn.buymeacoffee.com/buttons/default-yellow.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
+  <a href="https://www.buymeacoffee.com/fluttersizer" target="_blank"><img width="150px" src="https://www.buymeacoffee.com/assets/img/custom_images/orange_" style="height: 51px !important;width: 217px !important;" ></a>
 </p>
 
 <br />
-
-![Buy me a coffee widget](https://github.com/md-weber/buy_me_a_coffee/blob/master/assets/readme/BuyMeACoffee.gif)
 
 A flutter plugin for Easily make Flutter apps responsive. Automatically adapt UI to different screen sizes. Responsiveness made simple.
 
