@@ -117,6 +117,7 @@ Device.screenType == ScreenType.mobile
 
 # Suggestion
 **Orientation**
+
 If you want to give support for both portrait and landscape then make separate widget for both like orientation example.
 
 **DeviceType**
