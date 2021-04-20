@@ -11,7 +11,7 @@ A flutter plugin for Easily make Flutter apps responsive. Automatically adapt
 - [Installation](#Installation)
 - [Parameters](#Parameters)
 - [Suggestion](#Suggestion)
-- [Take Note](#take-note)
+- [Note](#Note)
 
 
 # Installation ⬇️
@@ -115,11 +115,11 @@ Device.screenType == ScreenType.mobile
    )
 ```
 
-## Suggestion
-** Orientation
+# Suggestion
+**Orientation**
 If you want to give support for both portrait and landscape then make separate widget for both like orientation example.
 
-** DeviceType
+**DeviceType**
 If you want to give support for both mobile and tablet then make separate widget for both like deviceType example.  
 
 # Note
