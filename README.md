@@ -6,145 +6,131 @@ A flutter plugin for Easily make Flutter apps responsive. Automatically adapt
 
 ![Alt Text](https://github.com/TechnoUrmish/Sizer/blob/master/example/images/img_ss_without_lib.png)
 
+# Content
 
-## Installation ⬇️
+- [Installation](#Installation)
+- [Parameters](#Parameters)
+- [Suggestion](#Suggestion)
+- [Take Note](#take-note)
+
+
+# Installation ⬇️
 Add to pubspec.yaml.
-```
+```dart
 dependencies:
   ...
-  sizer: ^1.1.7
+  sizer: ^2.0.0
 ```
 
-## Parameters ⚙️ 
+# Parameters ⚙️ 
 
-* `.h` - (double) for widget height
-* `.w` - (double) for widget width
-* `.sp` - (double) for font size
+* `.h` - Returns a calculated height based on the device
+* `.w` - Returns a calculated width based on the device
+* `.sp` - Returns a calculated sp based on the device
 * `SizerUtil.orientation` - for screen orientation portrait or landscape
 * `SizerUtil.deviceType` - for device type mobile or tablet
 
-## How to use 💻
+# Usage 💻
 
-Add the following imports to your Dart code: 
-```
+## Add the following imports to your Dart code: 
+```dart
 import 'package:sizer/sizer.dart';
 ```
 
-
-* First need to Initialize SizerUtil.init() method inside main.dart.
-* In main.dart must have to use LayoutBuilder and OrientationBuilder. 
-* See below explain for more details.
-
-
+## Wrap MaterialApp with ResponsiveSizer widget
+```dart
+ResponsiveSizer(
+      builder: (context, orientation, screenType) {
+        return MaterialApp();
+      }
+ )
 ```
-import 'package:flutter/material.dart';
-import 'login_screen.dart'; 
-import 'package:sizer/sizer.dart';
-
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return LayoutBuilder(                           //return LayoutBuilder
-      builder: (context, constraints) {
-        return OrientationBuilder(                  //return OrientationBuilder
-          builder: (context, orientation) {
-            //initialize SizerUtil()
-            SizerUtil().init(constraints, orientation);  //initialize SizerUtil
-            return MaterialApp(
-              debugShowCheckedModeBanner: false,
-              title: 'Sizer',
-              theme: ThemeData.light(),
-              home: LoginScreen(),
-            );
-          },
-        );
-      },
-    );
-  }
-}
-```
-
-You can use it like this: 
 
 Whenever you use height and width first import sizer package.
-```
+```dart
 import 'package:sizer/sizer.dart';
 ```
 
-**Widget Size** 🕓
-```
+## Widget Size 🕓
+```dart
     Container(
-      width: 20.0.w,    //It will take a 20% of screen width
-      height:30.0.h     //It will take a 30% of screen height
+      width: 20.w,    //It will take a 20% of screen width
+      height:30.h     //It will take a 30% of screen height
     )
 ```
 
-**Padding** ⏹
-```
+## Padding ⏹
+```dart
     Padding(
-      padding: EdgeInsets.symmetric(vertical: 5.0.h, horizontal: 3.0.h),
+      padding: EdgeInsets.symmetric(vertical: 5.h, horizontal: 3.h),
       child: Container(),
     );
 ```
 
-**Font size** 🆎
-```
+## Font size 🆎
+```dart
     Text(
-      'Sizer',style: TextStyle(fontSize: 15.0.sp),
+      'Sizer',style: TextStyle(fontSize: 15.sp),
     );
 ```
 
-**Square Widget** 🟩
+## Square Widget 🟩
 
 If you want to make square size widget then give height or width in both height and width.
-```
+```dart
     Container(
-            width: 30.0.h,      //It will take a 30% of screen height
-            height: 30.0.h,     //It will take a 30% of screen height
+            width: 30.h,      //It will take a 30% of screen height
+            height: 30.h,     //It will take a 30% of screen height
     );
 ```
 
-**Orientation** 🔄
+## Orientation 🔄
 
-If you want to give support for landscape
-```
-appBar() {
-    return SizerUtil.orientation == Orientation.portrait
-        ? Container(
-            width: 100.0.w,
-            height: 20.0.h,
-          )                     //for portrait screen
-        : Container(
-            width: 100.0.w,
-            height: 12.0.h,
-          );                    //for landscape screen
-  }
+If you want to support both portrait and landscape orientations
+```dart
+Device.orientation == Orientation.portrait
+  ? Container(   // Widget for Portrait
+      width: 100.w,
+      height: 20.5.h,
+   )
+  : Container(   // Widget for Landscape
+      width: 100.w,
+      height: 12.5.h,
+   )
 ```
 
-**DeviceType** 📱
+## DeviceType 📱
 
-If you want the same layout to look different in tablet and mobile then use ``SizerUtil.getDeviceType`` method
-```
-SizerUtil.getDeviceType
+If you want the same layout to look different in tablet and mobile, use the ``Device.screenType`` method:
+
+```dart
+Device.screenType == ScreenType.mobile
+  ? Container(   // Widget for Mobile
+      width: 100.w,
+      height: 20.5.h,
+   )
+  : Container(   // Widget for Tablet
+      width: 100.w,
+      height: 12.5.h,
+   )
 ```
 
-You can use it like this:
-```
- appBar() {
-    return SizerUtil.deviceType == DeviceScreenType.Tablet
-        ? Container(
-            width: 100.0.w,
-            height: 20.0.h,
-          )                     //for Tablet
-        : Container(
-            width: 100.0.w,
-            height: 12.0.h,
-          );                    //for Mobile
-  }
+## Suggestion
+** Orientation
+If you want to give support for both portrait and landscape then make separate widget for both like orientation example.
+
+** DeviceType
+If you want to give support for both mobile and tablet then make separate widget for both like deviceType example.  
+
+# Note
+
+You need to import `sizer` package in order to access `number.h`, `number.w`, and `number.sp`
+
+**Auto import in VSCode and Android Studio doesn't work for dart extension methods.** Typing `10.h` would not bring up auto import suggestion for this package
+
+One workaround is to type `Device` so that the auto import suggestion would show up:
+```dart
+import 'package:sizer/sizer.dart';
 ```
 
 ## Issue and feedback 💭 

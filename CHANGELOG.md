@@ -59,3 +59,13 @@
 ## [1.1.7] - 02.11.2020.
 
 * Upload Screen shots
+
+## [1.1.7] - 04.12.2020.
+
+* Fix readme file
+
+## [2.0.0] - 20.04.2021.
+
+* Fix all bugs
+* Update with flutter 2.0 features
+* Support to web and desktop
