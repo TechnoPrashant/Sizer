@@ -84,3 +84,7 @@
 
 * Fix code lint
 * Fix support multiple platforms
+
+## [2.0.4] - 20.04.2021.
+
+* Update readme file

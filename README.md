@@ -8,10 +8,10 @@ A flutter plugin for Easily make Flutter apps responsive. Automatically adapt
 
 # Content
 
-- [Installation](#Installation)
-- [Parameters](#Parameters)
-- [Suggestion](#Suggestion)
-- [Note](#Note)
+- [Installation](#installation)
+- [Parameters](#parameters)
+- [Suggestion](#suggestion)
+- [Note](#note)
 
 
 # Installation ⬇️
@@ -19,7 +19,7 @@ Add to pubspec.yaml.
 ```dart
 dependencies:
   ...
-  sizer: ^2.0.2
+  sizer: ^2.0.4
 ```
 
 # Parameters ⚙️ 
