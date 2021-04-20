@@ -100,3 +100,7 @@
 ## [2.0.7] - 20.04.2021.
 
 * Fix dartfmt
+
+## [2.0.8] - 20.04.2021.
+
+* Fix multiplatform bug
