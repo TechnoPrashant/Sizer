@@ -74,4 +74,13 @@
 
 * Fix all bugs
 * Update with flutter 2.0 features
-* Support to web and desktop
+* Support to web and deskto
+
+## [2.0.2] - 20.04.2021.
+
+* Update readme file
+
+## [2.0.3] - 20.04.2021.
+
+* Fix code lint
+* Fix support multiple platforms

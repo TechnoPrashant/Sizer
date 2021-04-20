@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-
 class Constant {
   static const String _IMG_PATH = 'images/';
   static const String IMG_1 = _IMG_PATH + 'img_1.png';
