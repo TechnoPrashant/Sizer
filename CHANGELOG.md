@@ -88,3 +88,11 @@
 ## [2.0.4] - 20.04.2021.
 
 * Update readme file
+
+## [2.0.5] - 20.04.2021.
+
+* Update readme file
+
+## [2.0.6] - 20.04.2021.
+
+* Update readme file

@@ -4,7 +4,7 @@
   <strong>Sizer is helps you to create responsive UI easily.</strong>
   <br />
   <br />
-  <a href="https://www.buymeacoffee.com/fluttersizer" target="_blank"><img width="180px" src="https://github.com/TechnoUrmish/Sizer/blob/master/example/images/iv_buy_me_a_coffee.png" style="height: 51px !important;width: 217px !important;" ></a>
+  <a href="https://www.buymeacoffee.com/fluttersizer" target="_blank"><img width="180px" src="https://raw.githubusercontent.com/TechnoUrmish/Sizer/master/example/images/iv_buy_me_a_coffee.png" style="height: 51px !important;width: 217px !important;" ></a>
 </p>
 
 <br />
@@ -28,7 +28,7 @@ Add to pubspec.yaml.
 ```dart
 dependencies:
   ...
-  sizer: ^2.0.4
+  sizer: ^2.0.6
 ```
 
 # Parameters ⚙️ 
