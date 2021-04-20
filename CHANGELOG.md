@@ -69,3 +69,9 @@
 * Fix all bugs
 * Update with flutter 2.0 features
 * Support to web and desktop
+
+## [2.0.1] - 20.04.2021.
+
+* Fix all bugs
+* Update with flutter 2.0 features
+* Support to web and desktop
