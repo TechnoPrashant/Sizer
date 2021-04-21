@@ -2,9 +2,9 @@ part of sizer;
 
 /// Provides `Context`, `Orientation`, and `ScreenType` parameters to the builder function
 typedef ResponsiveBuild = Widget Function(
-  BuildContext,
-  Orientation,
-  DeviceType,
+  BuildContext context,
+  Orientation orientation,
+  DeviceType deviceType,
 );
 
 /// A widget that gets the device's details like orientation and constraints

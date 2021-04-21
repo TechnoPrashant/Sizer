@@ -108,3 +108,15 @@
 ## [2.0.9] - 20.04.2021.
 
 * Fix multiplatform bug
+
+## [2.0.10] - 20.04.2021.
+
+* Fix multiplatform bug
+
+## [2.0.11] - 20.04.2021.
+
+* Fix multiplatform bug
+
+## [2.0.12] - 20.04.2021.
+
+* Fix sizer widget class

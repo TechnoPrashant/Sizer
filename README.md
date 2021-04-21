@@ -17,18 +17,21 @@ A flutter plugin for Easily make Flutter apps responsive. Automatically adapt
 
 # Content
 
+- [For Existing User](#existing-user)
 - [Installation](#installation)
 - [Parameters](#parameters)
 - [Suggestion](#suggestion)
 - [Note](#note)
 
+# Existing User
+## Hello Existing users, I have updated the package for supporting Flutter 2.0 and solving many bugs then Whenever you update 1.x.x to 2.x.x will be got many errors so please update the package with the new below code. 
 
 # Installation ⬇️
 Add to pubspec.yaml.
 ```dart
 dependencies:
   ...
-  sizer: ^2.0.9
+  sizer: ^2.0.12
 ```
 
 # Parameters ⚙️ 
