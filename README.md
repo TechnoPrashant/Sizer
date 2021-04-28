@@ -49,11 +49,11 @@ dependencies:
 import 'package:sizer/sizer.dart';
 ```
 
-## Wrap MaterialApp with ResponsiveSizer widget
+## Wrap `MaterialApp`/`WidgetsApp` with `Sizer` widget
 ```dart
-ResponsiveSizer(
+Sizer(
       builder: (context, orientation, screenType) {
-        return MaterialApp();
+        return MaterialApp(); // WidgetsApp works
       }
  )
 ```
@@ -67,7 +67,7 @@ import 'package:sizer/sizer.dart';
 ```dart
     Container(
       width: 20.w,    //It will take a 20% of screen width
-      height:30.h     //It will take a 30% of screen height
+      height: 30.h,     //It will take a 30% of screen height
     )
 ```
 
@@ -82,7 +82,8 @@ import 'package:sizer/sizer.dart';
 ## Font size 🆎
 ```dart
     Text(
-      'Sizer',style: TextStyle(fontSize: 15.sp),
+      'Sizer',
+      style: TextStyle(fontSize: 15.sp),
     );
 ```
 
@@ -91,8 +92,8 @@ import 'package:sizer/sizer.dart';
 If you want to make square size widget then give height or width in both height and width.
 ```dart
     Container(
-            width: 30.h,      //It will take a 30% of screen height
-            height: 30.h,     //It will take a 30% of screen height
+        width: 30.h,      //It will take a 30% of screen height
+        height: 30.h,     //It will take a 30% of screen height
     );
 ```
 
