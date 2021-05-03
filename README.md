@@ -31,7 +31,7 @@ Add to pubspec.yaml.
 ```dart
 dependencies:
   ...
-  sizer: ^2.0.12
+  sizer: ^2.0.13
 ```
 
 # Parameters ⚙️ 
@@ -52,7 +52,7 @@ import 'package:sizer/sizer.dart';
 ## Wrap MaterialApp with ResponsiveSizer widget
 ```dart
 ResponsiveSizer(
-      builder: (context, orientation, screenType) {
+      builder: (context, orientation, deviceType) {
         return MaterialApp();
       }
  )
@@ -113,10 +113,10 @@ Device.orientation == Orientation.portrait
 
 ## DeviceType 📱
 
-If you want the same layout to look different in tablet and mobile, use the ``Device.screenType`` method:
+If you want the same layout to look different in tablet and mobile, use the ``SizerUtil.deviceType`` method:
 
 ```dart
-Device.screenType == ScreenType.mobile
+SizerUtil.deviceType == DeviceType.mobile
   ? Container(   // Widget for Mobile
       width: 100.w,
       height: 20.5.h,
