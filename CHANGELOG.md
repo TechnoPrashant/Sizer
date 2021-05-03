@@ -120,3 +120,7 @@
 ## [2.0.12] - 20.04.2021.
 
 * Fix sizer widget class
+
+## [2.0.13] - 20.04.2021.
+
+* Update readme file

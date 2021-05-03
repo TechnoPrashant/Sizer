@@ -130,7 +130,7 @@ SizerUtil.getDeviceType
 You can use it like this:
 ```
  appBar() {
-    return SizerUtil.deviceType == DeviceScreenType.Tablet
+    return SizerUtil.deviceType == DeviceType.Tablet
         ? Container(
             width: 100.0.w,
             height: 20.0.h,
