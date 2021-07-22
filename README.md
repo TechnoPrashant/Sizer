@@ -1,7 +1,7 @@
 # sizer
 
 <p align="center" >
-  <strong>Sizer is helps you to create responsive UI easily.</strong>
+  <strong>Sizer helps you to create responsive UI easily.</strong>
   <br />
   <br />
   <a href="https://www.buymeacoffee.com/fluttersizer" target="_blank"><img width="180px" src="https://raw.githubusercontent.com/TechnoUrmish/Sizer/master/example/images/iv_buy_me_a_coffee.png" style="height: 51px !important;width: 217px !important;" ></a>
@@ -9,7 +9,7 @@
 
 <br />
 
-A flutter plugin for Easily make Flutter apps responsive. Automatically adapt UI to different screen sizes. Responsiveness made simple.
+A Flutter plugin for easily making Flutter apps responsive. Automatically adapt UI to different screen sizes. Responsiveness made simple.
 
 ![Alt Text](https://github.com/TechnoUrmish/Sizer/blob/master/example/images/img_ss_with_lib.png)
 
@@ -24,7 +24,7 @@ A flutter plugin for Easily make Flutter apps responsive. Automatically adapt
 - [Note](#note)
 
 # Existing User
-## Hello Existing users, I have updated the package for supporting Flutter 2.0 and solving many bugs then Whenever you update 1.x.x to 2.x.x will be got many errors so please update the package with the new below code. 
+## Hello Existing users, I have updated the package to support Flutter 2.0 and solved many bugs. So, whenever you update 1.x.x to 2.x.x, you will most likely get many errors so please update your existing code with the new code below. 
 
 # Installation ⬇️
 Add to pubspec.yaml.
@@ -51,11 +51,11 @@ import 'package:sizer/sizer.dart';
 
 ## Wrap MaterialApp with ResponsiveSizer widget
 ```dart
-ResponsiveSizer(
+Sizer(
       builder: (context, orientation, deviceType) {
         return MaterialApp();
       }
- )
+ ),
 ```
 
 Whenever you use height and width first import sizer package.
