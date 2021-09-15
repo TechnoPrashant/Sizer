@@ -124,3 +124,7 @@
 ## [2.0.13] - 20.04.2021.
 
 * Update readme file
+
+## [2.0.14] - 15.09.2021.
+
+* add method for responsive web
