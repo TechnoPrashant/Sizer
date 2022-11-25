@@ -27,7 +27,7 @@ class SizerUtil {
     orientation = currentOrientation;
 
     // Sets screen width and height
-    if (orientation == Orientation.portrait) {
+    if (!(Platform.isAndroid || Platform.isIOS) || (orientation == Orientation.portrait)) {
       width = boxConstraints.maxWidth;
       height = boxConstraints.maxHeight;
     } else {
