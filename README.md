@@ -1,4 +1,4 @@
-# sizer
+### Sizer (Responsive UI solution for Mobile App,Web and Desktop)
 
 <p align="center" >
   <strong>Sizer is helps you to create responsive UI easily.</strong>
@@ -9,94 +9,64 @@
 
 <br />
 
-A flutter plugin for Easily make Flutter apps responsive. Automatically adapt UI to different screen sizes. Responsiveness made simple.
+A Flutter package that effortlessly makes your apps responsive. It automatically adapts the UI to various screen sizes, making responsiveness simple and intuitive. Responsiveness made easy.
 
 ![Alt Text](https://github.com/TechnoUrmish/Sizer/blob/master/example/images/img_ss_with_lib.png)
 
 ![Alt Text](https://github.com/TechnoUrmish/Sizer/blob/master/example/images/img_ss_without_lib.png)
 
-# Content
+### Content
 
-- [For Existing User](#existing-user)
 - [Installation](#installation)
-- [Parameters](#parameters)
-- [Suggestion](#suggestion)
+- [How to use](#usage)
+- [Guideline](#guideline)
 - [Note](#note)
+- [FAQ](#faq)
 
-# Existing User
-## Hello Existing users, I have updated the package for supporting Flutter 2.0 and solving many bugs then Whenever you update 1.x.x to 2.x.x will be got many errors so please update the package with the new below code. 
-
-# Installation ⬇️
-Add to pubspec.yaml.
-```dart
+## Installation ⬇️
+Add `sizer` to pubspec.yaml
+```yaml
 dependencies:
-  ...
-  sizer: ^2.0.14
+  sizer: ^3.0.3
 ```
 
-# Parameters ⚙️ 
+### How to use ⚙️ 
 
-* `.h` - Returns a calculated height based on the device
-* `.w` - Returns a calculated width based on the device
-* `.sp` - Returns a calculated sp based on the device
-* `SizerUtil.orientation` - for screen orientation portrait or landscape
-* `SizerUtil.deviceType` - for device type mobile or tablet
-
-# Usage 💻
-
-## Add the following imports to your Dart code: 
+### Import the Package
 ```dart
 import 'package:sizer/sizer.dart';
 ```
 
-## Wrap MaterialApp with ResponsiveSizer widget
+### Wrap MaterialApp with Sizer widget
 ```dart
-ResponsiveSizer(
-      builder: (context, orientation, deviceType) {
-        return MaterialApp();
-      }
- )
-```
-
-Whenever you use height and width first import sizer package.
-```dart
-import 'package:sizer/sizer.dart';
-```
-
-## Widget Size 🕓
-```dart
-    Container(
-      width: 20.w,    //It will take a 20% of screen width
-      height:30.h     //It will take a 30% of screen height
-    )
-```
-
-## Padding ⏹
-```dart
-    Padding(
-      padding: EdgeInsets.symmetric(vertical: 5.h, horizontal: 3.h),
-      child: Container(),
+Sizer( 
+  builder: (context, orientation, screenType) {
+    return MaterialApp(
+      home: HomePage(),
     );
+  },
+);
 ```
 
-## Font size 🆎
+### Widget Size
 ```dart
-    Text(
-      'Sizer',style: TextStyle(fontSize: 15.sp),
-    );
+Container(
+  width: Adaptive.w(20),    // This will take 20% of the screen's width
+  height: 30.5.h     // This will take 30.5% of the screen's height
+)
 ```
 
-## Square Widget 🟩
-
-If you want to make square size widget then give height or width in both height and width.
+### Font size
 ```dart
-    Container(
-            width: 30.h,      //It will take a 30% of screen height
-            height: 30.h,     //It will take a 30% of screen height
-    );
+Text(
+  'Sizer', 
+  style: TextStyle(fontSize: 15.dp), 
+  // 15.sp can also be used instead of .dp
+  // To know their differences, check #FAQ
+)
 ```
 
-## Orientation 🔄
+### Orientation
 
 If you want to support both portrait and landscape orientations
 ```dart
@@ -111,34 +81,61 @@ Device.orientation == Orientation.portrait
    )
 ```
 
-## DeviceType 📱
+### ScreenType
 
-If you want the same layout to look different in tablet and mobile, use the ``SizerUtil.deviceType`` method:
+Same layout to look different in tablet and mobile, use the ``Device.screenType`` method:
 
 ```dart
-SizerUtil.deviceType == DeviceType.mobile
-  ? Container(   // Widget for Mobile
+Device.screenType == ScreenType.tablet
+  ? Container(   // Widget for Tablet
       width: 100.w,
       height: 20.5.h,
    )
-  : Container(   // Widget for Tablet
+  : Container(   // Widget for Mobile
       width: 100.w,
       height: 12.5.h,
    )
 ```
+*`Device.ScreenType` **can not** be *Desktop* unless `maxTabletWidth` is set
 
-# Suggestion
-**Orientation**
+## Guideline
+### Sizer
+* `maxMobileWidth` - Maximum width of a mobile device
+  (If the device's width is larger than this, it will be categorized as a tablet) - Default value: 599
+* `maxTabletWidth` - Maximum width of a tablet device
+  (If the device's width is larger than this, it will be categorized as a desktop) - Optional: enables *Desktop* `ScreenType` if enabled
 
-If you want to give support for both portrait and landscape then make separate widget for both like orientation example.
+### Extensions
+* `Adaptive.h()` or `.h` - Calculated percentage of the device's **height** (40.h -> 40% of device's height)
+* `Adaptive.w()` or `.w` - Calculated percentage of the device's **width** (40.w -> 40% of device's width)
+* `Adaptive.sp()` or `.sp` - Calculated sp based on the device's pixel density and aspect ratio (See [FAQ](#sp-dp-difference))
+* `Adaptive.dp()` or `.dp` - Calculated dp based on the device's pixel density (See [FAQ](#sp-dp-difference))
 
-**DeviceType**
+##### *Note: Only use `.sh` and `.sw` if you want height and width to depend on the device's available height and width after applying SafeArea. Use `.h` and `.w` by default.
+* `Adaptive.sh()` or `.sh` - Calculated percentage of the **remaining device's height** after applying `SafeArea`
+* `Adaptive.sw()` or `.sw` - Calculated percentage of the **remaining device's width** after applying `SafeArea`
 
-If you want to give support for both mobile and tablet then make separate widget for both like deviceType example.  
+<br />
 
-# Note
+* `Device.boxConstraints` - BoxConstraints of the device
+* `Device.orientation` - Screen Orientation of the device (portrait or landscape)
+* `Device.screenType` - Screen type of the device (mobile or tablet)
+* `Device.aspectRatio` - Aspect ratio of the device
+* `Device.pixelRatio` - Pixel density ratio of the device
 
-You need to import `sizer` package in order to access `number.h`, `number.w`, and `number.sp`
+<br />
+
+* `Adaptive.cm()` or `.cm` - The respective value in value in centimeters
+* `Adaptive.mm()` or `.mm` - The respective value in value in millimeters
+* `Adaptive.Q()` or `.Q` - The respective value in quarter-millimeters
+* `Adaptive.inches()` or `.inches` - The respective value in inches
+* `Adaptive.pc()` or `.pc` - The respective value in picas (1/6th of 1 inch)
+* `Adaptive.pt()` or `.pt` - The respective value in points (1/72th of 1 inch)
+* `Adaptive.px()` or `.px` - The respective value in pixels
+
+## Note
+
+You need to import `sizer` package in order to access `number.h`, `number.w`, `number.dp`, and `number.sp`
 
 **Auto import in VSCode and Android Studio doesn't work for dart extension methods.** Typing `10.h` would not bring up auto import suggestion for this package
 
@@ -146,7 +143,3 @@ One workaround is to type `Device` so that the auto import suggestion would show
 ```dart
 import 'package:sizer/sizer.dart';
 ```
-
-## Issue and feedback 💭 
-
-If you have any suggestion for including a feature or if something doesn't work, feel free to open a Github [issue](https://github.com/TechnoUrmish/Sizer/issues) for us to have a discussion on it.

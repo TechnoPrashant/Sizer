@@ -47,7 +47,7 @@ class _FirstPageScreenState extends State<FirstPageScreen> {
   _widTitle() {
     return Padding(
       padding: EdgeInsets.only(top: 1.5.h),
-      child: Text(Strings.APP_NAME,
+      child: Text('Sizer',
           style: GoogleFonts.lato(
             textStyle: TextStyle(fontSize: 30.sp, color: Colors.black),
           )),

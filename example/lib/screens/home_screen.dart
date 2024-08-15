@@ -26,9 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child: SizedBox(
           height: 7.h,
           width: 7.h,
-          child:
-
-          FloatingActionButton(
+          child: FloatingActionButton(
             onPressed: () {
               _pageController.animateToPage(_pageIndex < 3 ? _pageIndex + 1 : 0,
                   duration: Duration(milliseconds: 500),
@@ -85,15 +83,14 @@ class _HomeScreenState extends State<HomeScreen> {
               dotWidth: 1.5.h,
               dotHeight: 1.5.h,
               paintStyle: PaintingStyle.fill,
-              dotColor: Colors.grey[300],
+              dotColor: Colors.grey,
               activeDotColor: getColor()),
         ),
       ),
     );
 
-
     // Without this plugin
-   /* return Align(
+    /* return Align(
       alignment: Alignment.bottomCenter,
       child: Padding(
         padding: EdgeInsets.only(bottom: 30.0),
@@ -113,7 +110,6 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
       ),
     );*/
-
   }
 
   getColor() {

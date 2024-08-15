@@ -1,12 +1,13 @@
 /*
- * Created by Urmish patel on 2018/9/29.
- * email: urmishpatel9@gmail.com
+ * Created by Prashant Padmani on 2018/9/29.
+ * email: prashant09mca@gmail.com
 */
 library sizer;
 
+import 'dart:math';
+
 import 'package:flutter/widgets.dart';
-import 'package:universal_io/io.dart' show Platform;
-import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:flutter/foundation.dart' show defaultTargetPlatform, kIsWeb;
 
 part 'extension.dart';
 
