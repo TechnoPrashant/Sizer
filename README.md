@@ -39,7 +39,7 @@ import 'package:sizer/sizer.dart';
 
 ### Wrap MaterialApp with Sizer widget
 ```dart
-Sizer( 
+ResponsiveSizer( 
   builder: (context, orientation, screenType) {
     return MaterialApp(
       home: HomePage(),
