@@ -1,3 +1,7 @@
+# [3.0.4] - 10.08.2024.
+
+* Change name to Sizer
+
 # [3.0.3] - 10.08.2024.
 
 * Update Guidance

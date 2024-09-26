@@ -10,8 +10,8 @@ typedef ResponsiveBuilderType = Widget Function(
 /// A widget that gets the device's details like orientation and constraints
 ///
 /// Usage: Wrap MaterialApp with this widget
-class ResponsiveSizer extends StatelessWidget {
-  const ResponsiveSizer({
+class Sizer extends StatelessWidget {
+  const Sizer({
     Key? key,
     required this.builder,
     this.maxMobileWidth = 599,
