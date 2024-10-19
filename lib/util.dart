@@ -69,7 +69,7 @@ class Device {
 
     // Sets aspect and pixel ratio
     aspectRatio = constraints.constrainDimensions(width, height).aspectRatio;
-    pixelRatio = MediaQuery.of(context).devicePixelRatio;
+    // pixelRatio = MediaQuery.of(context).devicePixelRatio;
     pixelRatio = MediaQuery.devicePixelRatioOf(context);
 
     // Sets DeviceType
