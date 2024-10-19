@@ -62,13 +62,15 @@ class Device {
     height = boxConstraints.maxHeight;
 
     // Calculates remaining available size after `SafeArea`
-    final viewPadding = MediaQuery.of(context).viewPadding;
+    // final viewPadding = MediaQuery.of(context).viewPadding;
+    final viewPadding = MediaQuery.viewPaddingOf(context);
     safeWidth = width - (viewPadding.left + viewPadding.right);
     safeHeight = height - (viewPadding.top + viewPadding.bottom);
 
     // Sets aspect and pixel ratio
     aspectRatio = constraints.constrainDimensions(width, height).aspectRatio;
-    pixelRatio = MediaQuery.of(context).devicePixelRatio;
+    // pixelRatio = MediaQuery.of(context).devicePixelRatio;
+    pixelRatio = MediaQuery.devicePixelRatioOf(context);
 
     // Sets DeviceType
     if (kIsWeb) {
