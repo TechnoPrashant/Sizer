@@ -143,3 +143,19 @@ One workaround is to type `Device` so that the auto import suggestion would show
 ```dart
 import 'package:sizer/sizer.dart';
 ```
+# FAQ
+
+### <a id="sp-dp-difference"></a>What is the difference between `.sp` and `.dp`?
+
+`.dp` is *supposedly* calculated [see below](#dp-sp-calculation) based on Material Design's [dp calculation](https://material.io/design/layout/pixel-density.html#pixel-density-on-android)
+while`.sp` is calculated based on the device's [pixel density and aspect ratio](https://github.com/CoderUni/responsive_sizer/blob/f1558c80bc2c2ca7db3ccbd4b34a30c87f3c5f0e/lib/src/extension.dart#L54)
+
+### <a id="dp-sp-calculation"></a>Why is dp not calculated using the device's screen density?
+
+Since there is no way to obtain a device's physical width in inches, we could not calculate for screen density. Material Design's [screen density calculation](https://material.io/design/layout/pixel-density.html#pixel-density-on-android) involves a device's physical width in inches. As an alternative, dp is calculated using the device's [pixel ratio](https://api.flutter.dev/flutter/dart-ui/FlutterView/devicePixelRatio.html).
+
+# Community Support
+
+If you have any suggestions or issues, feel free to open an [issue](https://github.com/TechnoPrashant/Sizer/issues)
+
+If you would like to contribute, feel free to create a [PR](https://github.com/TechnoPrashant/Sizer/pulls)

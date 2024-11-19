@@ -1,6 +1,6 @@
 name: sizer
 description: Responsive UI solution for Mobile App,Web and Desktop. Responsiveness made easy.
-version: 3.0.4
+version: 3.0.5
 #author: Prashant Padmani <prashant09mca@gmail.com>
 homepage: https://github.com/TechnoUrmish/Sizer
 repository: https://github.com/TechnoUrmish/Sizer
@@ -12,7 +12,7 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
-  lints: ^4.0.0
+  lints: ^5.0.0
   flutter:
     sdk: flutter
 

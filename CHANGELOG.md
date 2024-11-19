@@ -1,3 +1,8 @@
+# [3.0.4] - 19.11.2024.
+
+* Update lint support 5.0.0
+* Added What is the difference between `.sp` and `.dp`?
+
 # [3.0.4] - 10.08.2024.
 
 * Change name to Sizer
